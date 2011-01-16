@@ -4,7 +4,8 @@ author:
   - 'Jonathan Yu <jawnsy@cpan.org>'
 build_requires:
   Test::Builder::Tester: 0
-  Test::NoWarnings: 0.084
+  Test::More: 0
+  Test::NoWarnings: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.31
 dynamic_config: 0
@@ -15,11 +16,13 @@ meta-spec:
   version: 1.4
 name: Test-DistManifest
 requires:
-  Exporter: 5.57
-  Module::Manifest: 0.07
-  Test::Builder: 0.72
-  Test::More: 0.62
-  perl: 5.006
+  Carp: 0
+  Cwd: 0
+  File::Find: 0
+  File::Spec: 0
+  File::Spec::Unix: 0
+  Module::Manifest: 0
+  Test::Builder: 0
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Test-DistManifest
   homepage: http://search.cpan.org/dist/Test-DistManifest
