@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.8.8; }
+BEGIN { require 5.008; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -24,7 +24,7 @@ my %WriteMakefileArgs = (
   'NAME' => 'Test::DistManifest',
   'PREREQ_PM' => {
     'Module::Manifest' => '0.07',
-    'Test::Builder' => '0.72'
+    'Test::Builder' => '0'
   },
   'VERSION' => '1.010',
   'test' => {
