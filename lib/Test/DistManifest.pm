@@ -1,6 +1,6 @@
 package Test::DistManifest;
 BEGIN {
-  $Test::DistManifest::VERSION = '1.010';
+  $Test::DistManifest::VERSION = '1.010'; # TRIAL
 }
 # ABSTRACT: Author test that validates a package MANIFEST
 
