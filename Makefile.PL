@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+BEGIN { require 5.8.8; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -12,9 +12,8 @@ my %WriteMakefileArgs = (
   'ABSTRACT' => 'Author test that validates a package MANIFEST',
   'AUTHOR' => 'Jonathan Yu <jawnsy@cpan.org>',
   'BUILD_REQUIRES' => {
-    'Test::Builder::Tester' => '0',
-    'Test::More' => '0',
-    'Test::NoWarnings' => '0'
+    'Test::More' => '0.62',
+    'Test::NoWarnings' => '0.084'
   },
   'CONFIGURE_REQUIRES' => {
     'ExtUtils::MakeMaker' => '6.31'
@@ -24,13 +23,8 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Test::DistManifest',
   'PREREQ_PM' => {
-    'Carp' => '0',
-    'Cwd' => '0',
-    'File::Find' => '0',
-    'File::Spec' => '0',
-    'File::Spec::Unix' => '0',
-    'Module::Manifest' => '0',
-    'Test::Builder' => '0'
+    'Module::Manifest' => '0.07',
+    'Test::Builder' => '0.72'
   },
   'VERSION' => '1.010',
   'test' => {
